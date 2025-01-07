@@ -12,4 +12,4 @@ This repository is an official implementation of CoreNet.
 ## News
 - Code will be released as soon as possible.
 - [2025/1/7] Camera Ready version is released [paper](https://www.sciencedirect.com/science/article/pii/S1566253524006742?via%3Dihub).
-- [2024/12/18] CoreNet is accepted by AAAI 2025 🎉🎉.
+- [2024/12/18] CoreNet is accepted by Informantion Fusion 2025 🎉🎉.
