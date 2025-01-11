@@ -42,7 +42,7 @@ python projects/corenet/setup.py develop
 
 ## Data Preparation
 ```
-python tools/create_data_nusc.py --root-path ./data/nuscenes --out-dir ./data --extra-tag nuscenes_radar --version v1.0
+python tools/create_data_nusc.py --root-path ./data/nuscenes --out-dir ./data --extra-tag nuscenes --version v1.0
 ```
 Floder structure
 ```
@@ -58,9 +58,11 @@ CoreNet
 │   │   ├── sweeps/
 │   │   ├── v1.0-test/
 |   |   ├── v1.0-trainval/
+│   ├── nuscenes_database
+│   ├── nuscenes_infos_train.pkl
 |   ├── nuscenes_infos_test.pkl
 |   ├── nuscenes_infos_val.pkl
-|   ├── nuscenes_infos_train.pkl
+|   ├── nuscenes_dbinfos_train.pkl
 ```
 ## Train
 You should train lidar brach first and merge the weight with image backbones. We give our pre-trained merged weight [here](https://drive.usercontent.google.com/download?id=1DzEw7MwVuBYLDD-e-8LEYwS_ulnroxJD&export=download&authuser=0&confirm=t&uuid=5d163f50-7a28-473d-9f70-817c97963f8c&at=AIrpjvMMlEhoWjOzWh9KOAZ-OgPm:1736602091374).
@@ -78,7 +80,7 @@ bash tools/dist_test.sh projects/corenet/configs/corenet_lidar-cam.py pretrain_m
 ```
 
 ## Acknowledgements
-We thank these great works and open-source codebases: BEVFusion, IS-Fusion, SparseFusion, DAL, MMDetection3D.
+We thank these great works and open-source codebases: [BEVFusion](https://github.com/mit-han-lab/bevfusion), [IS-Fusion](https://github.com/yinjunbo/IS-Fusion), [SparseFusion](https://github.com/yichen928/SparseFusion), [DAL](https://github.com/HuangJunJie2017/BEVDet), [MMDetection3D](https://github.com/open-mmlab/mmdetection3d).
 
 ## Citation
 ```

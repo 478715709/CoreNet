@@ -83,8 +83,8 @@ def nuscenes_data_prep(root_path,
     info_val_path = osp.join(out_dir, f'{info_prefix}_infos_val.pkl')
     update_pkl_infos('nuscenes', out_dir=out_dir, pkl_path=info_train_path)
     update_pkl_infos('nuscenes', out_dir=out_dir, pkl_path=info_val_path)
-    # create_groundtruth_database(dataset_name, root_path, out_dir, info_prefix,
-    #                             f'{info_prefix}_infos_train.pkl')
+    create_groundtruth_database(dataset_name, root_path, out_dir, info_prefix,
+                                f'{info_prefix}_infos_train.pkl')
     
 def lyft_data_prep(root_path, info_prefix, version, max_sweeps=10):
     """Prepare data related to Lyft dataset.
@@ -254,7 +254,7 @@ parser.add_argument(
 parser.add_argument(
     '--max-sweeps',
     type=int,
-    default=20,
+    default=10,
     required=False,
     help='specify sweeps of lidar per example')
 parser.add_argument(
