@@ -42,7 +42,7 @@ python projects/corenet/setup.py develop
 
 ## Data Preparation
 ```
-python tools/create_data_nusc.py --root-path ./data/nuscenes --out-dir ./data --extra-tag nuscenes --version v1.0
+python tools/create_data.py --root-path ./data/nuscenes --out-dir ./data --extra-tag nuscenes --version v1.0
 ```
 Floder structure
 ```
