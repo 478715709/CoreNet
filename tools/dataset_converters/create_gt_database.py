@@ -224,7 +224,7 @@ def create_groundtruth_database(dataset_class_name,
         database_save_path = osp.join(out_path, f'{info_prefix}_gt_database')
     if db_info_save_path is None:
         db_info_save_path = osp.join(out_path,
-                                     f'{info_prefix}_dbinfos_train_val.pkl')
+                                     f'{info_prefix}_dbinfos_train.pkl')
     mmengine.mkdir_or_exist(database_save_path)
     all_db_infos = dict()
     if with_mask:
