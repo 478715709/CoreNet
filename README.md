@@ -10,8 +10,9 @@
 This repository is an official implementation of CoreNet.
 
 ## News
+- [2025/2/23] Implement details of robustness analysis are released.
 - [2025/1/11] Codes are released.
-- [2025/1/7] Camera Ready version is released [paper](https://www.sciencedirect.com/science/article/pii/S1566253524006742?via%3Dihub) [Arxiv](https://arxiv.org/abs/2501.06550).
+- [2025/1/7] Camera Ready version is released [paper](https://www.sciencedirect.com/science/article/pii/S1566253524006742?via%3Dihub) [arxiv](https://arxiv.org/abs/2501.06550).
 - [2024/12/18] CoreNet is accepted by Informantion Fusion 2025 🎉🎉.
 
 
