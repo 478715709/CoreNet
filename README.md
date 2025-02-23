@@ -103,9 +103,9 @@ description = nusc.get('scene",nusc.get('sample', sample token)['scene token'])[
 #   eval_boxes.boxes[sample token] = [] # night
 
 # for table-9 
-# eval_boxes.boxes[sample_tokenl]= [box for box in eval_boxes[sample_token] if box.ego_dist< 20] # near
+# eval_boxes.boxes[sample_token]= [box for box in eval_boxes[sample_token] if box.ego_dist< 20] # near
 
-# eval_boxes.boxes[sample_token] = [box for box in eval_boxes[sample_token] if (20 < box.ego_dist and box.ego_dist < 30)] s# middle
+# eval_boxes.boxes[sample_token] = [box for box in eval_boxes[sample_token] if (20 < box.ego_dist and box.ego_dist < 30)] # middle
 
 # eval_boxes.boxes[sample_token]= [box for box in eval_boxes[sample_token] if box.ego_dist > 30] # far
 
