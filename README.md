@@ -80,6 +80,40 @@ The log of training process is [here](https://drive.usercontent.google.com/downl
 bash tools/dist_test.sh projects/corenet/configs/corenet_lidar-cam.py pretrain_model/val-best.pth 8
 ```
 
+## Results of nuscenes-C (Table-10)
+```
+Release the corruption_LC in test_pipeline in corenet_lidar-cam.py for evaluate. The original codes is in corenet/transforms_3d.py
+```
+
+## Results of robustness analysis (Table-8 and Table-9)
+```
+Filter the objects in filter_eval_boxes function nuscenes-devkit as following:
+# for table-8
+description = nusc.get('scene",nusc.get('sample', sample token)['scene token'])['description']
+# if('Rain' in description) or ('rain' in description):
+#   eval_boxes.boxes[sample token]=[] # sunny
+
+# if('Rain' not in description) and ('rain' not in description):
+#   eval_boxes.boxes[sample token] = [] # rainy
+
+# if('Night'in description) or ('night' in description):
+#   eval_boxes.boxes[sample token]=[] # day
+
+# if('Night' not in description) and ('night' not in description):
+#   eval_boxes.boxes[sample token] = [] # night
+
+# for table-9 
+# eval_boxes.boxes[sample_tokenl]= [box for box in eval_boxes[sample_token] if box.ego_dist< 20] # near
+
+# eval_boxes.boxes[sample_token] = [box for box in eval_boxes[sample_token] if (20 < box.ego_dist and box.ego_dist < 30)] s# middle
+
+# eval_boxes.boxes[sample_token]= [box for box in eval_boxes[sample_token] if box.ego_dist > 30] # far
+
+# eval_boxes.boxes[sample_token]= [box for box in eval_boxes[sample_token] if max(box.size)<4] # small
+
+# eval_boxes.boxes[sample_token]= [box for box in eval_boxes[sample_token] if max(box.size)>4] # large
+```
+
 ## Acknowledgements
 We thank these great works and open-source codebases: [BEVFusion](https://github.com/mit-han-lab/bevfusion), [IS-Fusion](https://github.com/yinjunbo/IS-Fusion), [SparseFusion](https://github.com/yichen928/SparseFusion), [DAL](https://github.com/HuangJunJie2017/BEVDet), [MMDetection3D](https://github.com/open-mmlab/mmdetection3d).
 
