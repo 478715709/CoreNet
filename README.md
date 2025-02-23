@@ -87,7 +87,7 @@ Release the corruption_LC in test_pipeline in corenet_lidar-cam.py for evaluate.
 
 ## Results of robustness analysis (Table-8 and Table-9)
 ```
-Filter the objects in filter_eval_boxes function nuscenes-devkit as following:
+Modify the filter_eval_boxes function in nuscenes-devkit to filter objects as following:
 # for table-8
 description = nusc.get('scene",nusc.get('sample', sample token)['scene token'])['description']
 # if('Rain' in description) or ('rain' in description):
