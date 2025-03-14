@@ -74,7 +74,9 @@ You can then conduct multi-modal training via the following command.
 bash tools/dist_train.sh projects/corenet/configs/corenet_lidar-cam.py 8 --work-dir ${LOG_DIR}
 ```
 The pre-trianed best weight of CoreNet is [here](https://drive.usercontent.google.com/download?id=1F5pKBZEXT40y0qru-TLFPga8z3HhhJgZ&export=download&authuser=0&confirm=t&uuid=5f42ed2d-4f01-4d88-b761-49b6c7bd5f4a&at=AIrpjvMOJJY4JrdbyhrRczMM8j_j:1736602154582).
+
 The log of training process is [here](https://drive.usercontent.google.com/download?id=1nqzckVEL2DWO9EevGnIk-HczfMHmL2em&export=download&authuser=0&confirm=t&uuid=a296e4f6-50fa-4e27-9a77-4fcce976f23a&at=AIrpjvMlK1Q-mIpBH1G4b5ettrXX:1738640762151).
+
 Details of metrics in test subset is [here](https://drive.usercontent.google.com/download?id=1LQcmayA1SpJj2V-M4zdillPddiXi4GaV&export=download&authuser=0&confirm=t&uuid=e90e6907-d022-47b7-9618-7ba5aae4d38d&at=AEz70l7Zzqch6ESmH8ea4LMh0z4c:1741955642966)
 
 ## Test
