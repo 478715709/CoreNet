@@ -65,6 +65,7 @@ CoreNet
 |   ├── nuscenes_infos_val.pkl
 |   ├── nuscenes_dbinfos_train.pkl
 ```
+
 ## Train
 You should train lidar brach first and merge the weight with image backbones. We give our pre-trained merged weight [here](https://drive.usercontent.google.com/download?id=1DzEw7MwVuBYLDD-e-8LEYwS_ulnroxJD&export=download&authuser=0&confirm=t&uuid=5d163f50-7a28-473d-9f70-817c97963f8c&at=AIrpjvMMlEhoWjOzWh9KOAZ-OgPm:1736602091374).
 The pre-train steps of our methods is similar to BEVFusion, the only difference is that we use velocity augmentation from DAL.
