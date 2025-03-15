@@ -77,8 +77,6 @@ The pre-trianed best weight of CoreNet is [here](https://drive.usercontent.googl
 
 The log of training process is [here](https://drive.usercontent.google.com/download?id=1nqzckVEL2DWO9EevGnIk-HczfMHmL2em&export=download&authuser=0&confirm=t&uuid=a296e4f6-50fa-4e27-9a77-4fcce976f23a&at=AIrpjvMlK1Q-mIpBH1G4b5ettrXX:1738640762151).
 
-Details of metrics in test subset is [here](https://drive.usercontent.google.com/download?id=1LQcmayA1SpJj2V-M4zdillPddiXi4GaV&export=download&authuser=0&confirm=t&uuid=e90e6907-d022-47b7-9618-7ba5aae4d38d&at=AEz70l7Zzqch6ESmH8ea4LMh0z4c:1741955642966).
-
 ## Test
 ```
 bash tools/dist_test.sh projects/corenet/configs/corenet_lidar-cam.py pretrain_model/val-best.pth 8
