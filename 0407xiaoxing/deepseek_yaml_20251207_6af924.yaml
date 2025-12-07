@@ -1,0 +1,32 @@
+# config.yaml
+modalities: ['FLAIR', 'T1', 'T1c', 'T2']
+image_size: [128, 128, 128]
+num_classes: 4
+base_channels: 8
+num_stages: 5
+d_model: 256
+use_interleaved: true
+
+# 训练参数
+batch_size: 2
+num_epochs: 1000
+learning_rate: 2e-4
+weight_decay: 1e-5
+num_workers: 4
+
+# 损失权重
+class_weights: [0.25, 1.0, 1.0, 1.0]
+alpha: 0.5
+beta: 0.3
+gamma: 0.2
+
+# 数据增强
+augmentation:
+  random_flip: true
+  random_rotation: 15
+  random_scale: [0.9, 1.1]
+  random_brightness: 0.1
+  random_contrast: 0.1
+
+# 缺失模态模拟
+missing_rates: [0.1, 0.1, 0.1, 0.1]
